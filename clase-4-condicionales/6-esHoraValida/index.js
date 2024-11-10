@@ -1,11 +1,19 @@
+
+
 function esHoraValida (hora){
+      let horasMinutos= hora.split(':');
+      let horasNumeros = Number(horasMinutos[0]);
+      let minutosnumeros = Number(horasMinutos[1]);
+      
 
-      let horaYminuto = horanumero.split(':');
+      
+      return horasNumeros>= 0 && horasNumeros <= 24 && minutosnumeros >= 0 && minutosnumeros <= 60;
 
-      let horas = hora[0];
-      let horasNumero = Number(hora)
 
-      return horasNumero;
+
+      
+
+    
 }
 
 console.log(esHoraValida('12:23')) // true
